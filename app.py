@@ -22,7 +22,7 @@ app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLw
 server = app.server
 
 app.layout = html.Div([
-        ('Our Changing World!' , style={'color': 'blue', 'fontSize': 44}),
+        'Our Changing World!',
         dcc.Dropdown(
             id='ycol', value='lifeExp',
             options=[{'label': i, 'value': i} for i in mean_df[['pop','gdpPercap', 'lifeExp']]]),
